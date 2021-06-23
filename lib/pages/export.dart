@@ -1,1 +1,2 @@
-export 'splash/splash_page.dart';
+export 'auth/export.dart';
+export 'splash/export.dart';

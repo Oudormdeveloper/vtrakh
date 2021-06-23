@@ -19,9 +19,7 @@ class MyApp extends StatelessWidget {
       initialRoute: initialRoute,
       getPages: AppPages.routes,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: lightTheme,
     );
   }
 }

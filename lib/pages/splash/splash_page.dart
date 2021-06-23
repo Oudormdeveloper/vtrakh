@@ -7,12 +7,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(
-          "welcome",
-          style: TextStyle(
-            color: cWarning,
-          ),
-        ),
+        child: SvgPicture.asset(logo),
       ),
     );
   }
