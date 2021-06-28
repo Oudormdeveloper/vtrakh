@@ -7,6 +7,8 @@ export 'package:flutter_svg/svg.dart';
 export 'config/export.dart';
 export 'constants/export.dart';
 
+export 'models/export.dart';
+
 // Block Page
 
 export 'pages/export.dart';

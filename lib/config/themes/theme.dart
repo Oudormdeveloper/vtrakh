@@ -4,6 +4,7 @@ ThemeData lightTheme = ThemeData.light().copyWith(
   scaffoldBackgroundColor: Colors.white,
   // fontFamily: "Poppins",
   appBarTheme: appBarTheme(),
+  brightness: Brightness.light,
   textTheme: textTheme(),
   inputDecorationTheme: inputDecorationTheme(),
   visualDensity: VisualDensity.adaptivePlatformDensity,
