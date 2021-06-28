@@ -12,7 +12,7 @@ class RegisterPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+          padding: EdgeInsets.all(kDefaultPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -35,7 +35,7 @@ class RegisterPage extends StatelessWidget {
                       label: 'Confirm Password',
                       hitText: '*****',
                     ),
-                    VericalSpacing(),
+                    VerticalSpacing(),
                     KVButton(text: 'Register', press: () {}),
                   ],
                 ),

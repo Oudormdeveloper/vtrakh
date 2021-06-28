@@ -22,7 +22,7 @@ class KVTextFormField extends StatelessWidget {
             hintText: '$hitText',
           ),
         ),
-        VericalSpacing(),
+        VerticalSpacing()
       ],
     );
   }
