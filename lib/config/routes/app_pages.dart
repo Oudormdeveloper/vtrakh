@@ -6,5 +6,6 @@ class AppPages {
     GetPage(name: AppRoutes.ONBOARD, page: () => OnBoardPage()),
     GetPage(name: AppRoutes.REGISTER, page: () => RegisterPage()),
     GetPage(name: AppRoutes.LOGIN, page: () => LoginPage()),
+    GetPage(name: AppRoutes.FORGOTPASSWORD, page: () => ForgotPasswordPage()),
   ];
 }

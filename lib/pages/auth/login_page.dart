@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+          padding: EdgeInsets.all(kDefaultPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -29,6 +29,20 @@ class LoginPage extends StatelessWidget {
                     KVButton(
                       text: 'Login',
                       press: () {},
+                    ),
+                    VerticalSpacing(),
+                    SizedBox(
+                      width: double.infinity,
+                      child: GestureDetector(
+                        onTap: () {
+                          Get.toNamed(AppRoutes.FORGOTPASSWORD);
+                        },
+                        child: Text(
+                          'Forget password?',
+                          style: titleTextStyle(),
+                          textAlign: TextAlign.right,
+                        ),
+                      ),
                     )
                   ],
                 ),

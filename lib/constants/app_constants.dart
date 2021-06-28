@@ -1,7 +1,7 @@
 import 'package:vtrakh/core.dart';
 
-class VericalSpacing extends StatelessWidget {
-  const VericalSpacing({
+class VerticalSpacing extends StatelessWidget {
+  const VerticalSpacing({
     Key? key,
     this.of = 20,
   }) : super(key: key);
@@ -13,3 +13,5 @@ class VericalSpacing extends StatelessWidget {
     );
   }
 }
+
+const double kDefaultPadding = 20.0;
