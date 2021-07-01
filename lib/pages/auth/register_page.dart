@@ -36,7 +36,12 @@ class RegisterPage extends StatelessWidget {
                       hitText: '*****',
                     ),
                     VerticalSpacing(),
-                    KVButton(text: 'Register', press: () {}),
+                    KVButton(
+                      text: 'Register',
+                      press: () {
+                        Get.offAllNamed(AppRoutes.MASTER);
+                      },
+                    ),
                   ],
                 ),
               ),

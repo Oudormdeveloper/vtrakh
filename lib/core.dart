@@ -5,6 +5,7 @@ export 'package:flutter_svg/svg.dart';
 
 // Config Block
 export 'config/export.dart';
+export 'enum/export.dart';
 export 'constants/export.dart';
 
 export 'models/export.dart';
