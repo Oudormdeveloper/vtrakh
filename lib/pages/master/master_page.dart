@@ -10,12 +10,10 @@ class MasterPage extends StatefulWidget {
 
 class _MasterPageState extends State<MasterPage> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black);
   static const List<Widget> _widgetOptions = <Widget>[
     TrackingPage(),
     VehiclesPage(),
-    SettingsPage()
+    SettingsPage(),
   ];
 
   void _onItemTapped(int index) {
