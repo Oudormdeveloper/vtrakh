@@ -10,9 +10,10 @@ class MasterPage extends StatefulWidget {
 
 class _MasterPageState extends State<MasterPage> {
   int _selectedIndex = 0;
-  static const List<Widget> _widgetOptions = <Widget>[
+  static List<Widget> _widgetOptions = <Widget>[
     TrackingPage(),
     VehiclesPage(),
+    AlertPage(),
     SettingsPage(),
   ];
 
@@ -25,9 +26,10 @@ class _MasterPageState extends State<MasterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.red,
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.public),
             label: 'Tracking',
@@ -37,12 +39,19 @@ class _MasterPageState extends State<MasterPage> {
             label: 'Vehicles',
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.notifications_outlined),
+            label: 'Alert',
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: 'Settings',
           ),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: cPrimary,
+        unselectedItemColor: cSecondary,
+        showUnselectedLabels: true,
+        // unselectedLabelStyle: TextStyle(color: cBlack),
         onTap: _onItemTapped,
       ),
     );

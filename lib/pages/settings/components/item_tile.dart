@@ -7,10 +7,12 @@ class ItemTile extends StatelessWidget {
     this.text,
     this.icon,
     this.isTrailing = false,
+    this.onTap,
   }) : super(key: key);
   final String? text;
   final IconData? icon;
   final bool isTrailing;
+  final Function()? onTap;
   @override
   Widget build(BuildContext context) {
     var txtTheme = Get.theme.textTheme;
@@ -18,8 +20,8 @@ class ItemTile extends StatelessWidget {
       children: [
         ListTile(
           horizontalTitleGap: 2.0,
-          onTap: () {},
-          tileColor: cWhite,
+          onTap: onTap,
+          tileColor: Get.isDarkMode ? cBlack : cWhite,
           leading: Icon(
             icon,
             color: cPrimary,
@@ -30,7 +32,7 @@ class ItemTile extends StatelessWidget {
                 child: Text(
                   text!,
                   style: txtTheme.subtitle1!.copyWith(
-                    color: Colors.black,
+                    color: Get.isDarkMode ? cWhite : cBlack,
                     fontWeight: FontWeight.w600,
                   ),
                 ),

@@ -6,7 +6,7 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      // backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text('Settings'),
       ),
@@ -39,7 +39,11 @@ class SettingsPage extends StatelessWidget {
               ),
             ),
           ),
-          ItemTile(text: "Edit Profile", icon: Icons.lock),
+          ItemTile(
+            text: "Edit Profile",
+            icon: Icons.lock,
+            onTap: () => Get.to(EditProfilePage()),
+          ),
           ItemTile(text: "Change Password", icon: Icons.lock),
           VerticalSpacing(of: 30.0),
           ItemTile(

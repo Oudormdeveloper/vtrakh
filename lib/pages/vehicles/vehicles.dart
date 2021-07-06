@@ -7,7 +7,7 @@ class VehiclesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      // backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text('Vehicles List'),
         elevation: 1.0,

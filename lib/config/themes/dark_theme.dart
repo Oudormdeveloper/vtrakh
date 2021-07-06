@@ -1,7 +1,7 @@
 import 'package:vtrakh/core.dart';
 
 ThemeData darkTheme = ThemeData.dark().copyWith(
-  scaffoldBackgroundColor: Colors.black87,
+  scaffoldBackgroundColor: Colors.grey[900],
   // fontFamily: "Poppins",
   appBarTheme: darkAppBarTheme(),
   brightness: Brightness.dark,

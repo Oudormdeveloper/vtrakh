@@ -10,7 +10,9 @@ class AppPages {
     GetPage(name: AppRoutes.FORGOTPASSWORD, page: () => ForgotPasswordPage()),
     GetPage(name: AppRoutes.MASTER, page: () => MasterPage()),
     GetPage(name: AppRoutes.TRACKING, page: () => TrackingPage()),
+    GetPage(name: AppRoutes.ALERT, page: () => AlertPage()),
     GetPage(name: AppRoutes.SETTINGS, page: () => SettingsPage()),
     GetPage(name: AppRoutes.VEHICLES, page: () => VehiclesPage()),
+    GetPage(name: AppRoutes.EDIT_PROFILE, page: () => EditProfilePage()),
   ];
 }

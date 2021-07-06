@@ -1,7 +1,7 @@
 import 'package:vtrakh/core.dart';
 
 ThemeData lightTheme = ThemeData.light().copyWith(
-  scaffoldBackgroundColor: Colors.white,
+  scaffoldBackgroundColor: Colors.grey[100],
   // fontFamily: "Poppins",
   appBarTheme: appBarTheme(),
   brightness: Brightness.light,

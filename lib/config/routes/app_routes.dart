@@ -1,6 +1,6 @@
 class AppRoutes {
   static Future<String> get initailRoutes async {
-    return WELCOME;
+    return MASTER;
   }
 
   static const WELCOME = '/';
@@ -9,7 +9,9 @@ class AppRoutes {
   static const LOGIN = '/auth/login';
   static const FORGOTPASSWORD = '/auth/forgot-password';
   static const MASTER = '/master';
+  static const ALERT = '/alert';
   static const SETTINGS = '/settings';
   static const TRACKING = '/tracking';
   static const VEHICLES = '/vehicles';
+  static const EDIT_PROFILE = '/settings/edit-profile';
 }
